@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylessecondpage.css">
+    <title>The Daily Cat</title>
+</head>
+
+<body>
+    <script src = "scripts.js"></script>
+    <div class="top-bar">
+        <ul>
+            <li><img src="cat-logo.png" alt=cat-icon width=50></li>
+            <li><a href="landingpage.html">The Daily Cat</a></li>
+            <li style="float:right"><a href="pastgenerations.html">My Cat Facts</a></li>
+        </ul>
+    </div>
+    <div id="main-body">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/009/665/315/small/group-of-cute-kitty-cat-family-greeting-cartoon-png.png"
+            alt="a-group-of-cats">
+        <h1>The Daily Cat</h1>
+        <h2 id="random-cat-facts-generator-text">Random Cat Facts Generator</h2>
+    </div>
+
+     <!--generate function-->
+    </div>
+    <div id="submit">
+        <h2 id="submit-your-own-cat-facts-text">🐱Save your own cat facts🐱</h2>
+        <input type="text" id="submitFunction" placeholder="Ex. Cats are cute!">
+        <p>
+            <span class="button"><div id="button"><button id="button" onclick="addFact()"></button>
+            </div></span>
+        </p>
+    </div>
+    
+    <div id="fact-list">
+        <h2>My facts</h2>
+        <ul id="factList">
+            <!-- Facts will be dynamically added here -->
+        </ul>
+        <p>
+            <button onclick="clearList()">clear</button>
+        </p>
+    </div>
+    
+</body>
+
+</html>

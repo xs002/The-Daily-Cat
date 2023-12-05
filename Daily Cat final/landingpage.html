@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styleslandingpage.css">
+    <title>The Daily Cat</title>
+</head>
+
+<body>
+    <script src = "scripts.js"></script>
+    <div class="top-bar">
+        <ul>
+            <li><img src="cat-logo.png" alt=cat-icon width=50></li>
+            <li><a href="landingpage.html">The Daily Cat</a></li>
+            <li style="float:right"><a href="secondpage.html">My Cat Facts</a></li>
+        </ul>
+    </div>
+
+    <div class="main-body">
+        <div id="title">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/009/665/315/small/group-of-cute-kitty-cat-family-greeting-cartoon-png.png"
+                alt="a-group-of-cats">
+            <h1>The Daily Cat</h1>
+            <h2 id="random-cat-facts-generator-text">Random Cat Facts Generator</h2>
+        </div>
+        
+        <div id="generator"> 
+            <div id="generated-facts"></div><!-- The box where the random facts appear -->
+            <div>
+                <p>
+                    <span class="gen-button"><div id="gen-button"><button id="gen-button" onclick="generateRandomFact()"></button>
+                    </div></span>
+                </p>
+            </div>
+        </div>
+
+        <div id="past-generation">
+        <h2>🐱My Past Generations🐱</h2>
+            <ul id="generations">
+                <!--create a JS function to add to this list-->
+            </ul>
+        </div>
+
+      
+        
+
+    </div>
+</body>
+
+</html>
