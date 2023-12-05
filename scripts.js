@@ -1,12 +1,6 @@
 //API endpoint for getting random cat facts
 const CAT_FACTS_API_URL = 'https://catfact.ninja/fact?max_length=140';
 
-//API endpoint for submitting cat facts
-const SUBMIT_FACT_API_URL = '';
-
-//API endpoint for searching cat facts
-const SEARCH_FACTS_API_URL = '';
-
 // //switch between the pages
 // document.addEventListener('DOMContentLoaded', function () {
 //     const isLandingPage = document.getElementById('generationsPage');
