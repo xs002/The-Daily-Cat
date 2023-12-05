@@ -1,0 +1,72 @@
+body {
+    background-image: url("background.jpg");
+    flex: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 20px;
+    color: #000117;
+    font-family: "Guava Candy";
+}
+
+.main-body {
+    padding: 20px;
+    align-items: center;
+}
+
+.main-body img {
+    margin-top: 10%;
+}
+
+h1 {
+    font-family: "Guava Candy";
+    font-size: 500%;
+    margin: 0%;
+}
+
+h2 {
+    font-family: "Guava Candy";
+}
+
+#random-cat-facts-generator-text {
+    margin-top: 0%;
+    margin-bottom: 4%;
+}
+
+.main-body {
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+}
+
+.top-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.top-bar li {
+    float: left;
+}
+
+.top-bar li a {
+    display: block;
+    color: #000117;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Guava Candy";
+}
+
+.top-bar li a:hover {
+    color: #89A3FF;
+}
+
+#past-generations-list ul {
+    list-style-position: inside;
+    text-align: center;
+    font-size: 120%;
+
+}

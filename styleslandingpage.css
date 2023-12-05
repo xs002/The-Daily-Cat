@@ -1,0 +1,90 @@
+body {
+    background-image: url("background.jpg");
+    flex: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 20px;
+    color: #000117;
+}
+
+.main-body {
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+}
+
+#random-cat-facts-generator-text {
+    margin-top: 0%;
+}
+
+#submit-your-own-cat-facts-text {
+    margin-bottom: 0%;
+}
+
+#generated-facts {
+    border: 1px solid;
+    margin: auto;
+    border-color: #000117;
+    border-radius: 20px;
+    background-color: rgba(0, 1, 23, 0.2);
+    width: 600px;
+    height: 100px;
+    color: white;
+}
+
+.gen-button {
+    content: url("button-reg.png");
+    border: 0px;
+    width: 100px;
+}
+
+.gen-button:hover {
+    content: url("button-hover.png");
+    width: 100px;
+    border: 0px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border: 0px;
+    box-shadow: inset 0 0 7px gray;
+}
+
+
+h1 {
+    font-family: "Guava Candy";
+    font-size: 500%;
+    margin: 0%;
+}
+
+h2 {
+    font-family: "Guava Candy";
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #000117;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Guava Candy";
+}
+
+li a:hover {
+    color: #89A3FF;
+}
