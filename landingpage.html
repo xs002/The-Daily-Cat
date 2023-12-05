@@ -6,9 +6,10 @@
     <title>The Daily Cat</title>
 </head>
 <body>
+    <script src = "index.js"></script>
     <div id="decor">
         <p>The Daily Cat</p>
-        <button onclick="search()">My Past Generations</button><!--js links to other page-->
+        <div id = "generationsPage"><button onclick="search()">My Past Generations</button></div><!--js links to other page-->
         <br>
         <img src="https://static.vecteezy.com/system/resources/thumbnails/009/665/315/small/group-of-cute-kitty-cat-family-greeting-cartoon-png.png">
         <h1>The Daily Cat</h1>
@@ -18,11 +19,20 @@
 
     <div id="main functions">
         <!--generate function-->
-        <div id="facts"></div><!--The box where the random facts appear-->
-        <p><button onclick="search()">Generate</button> or <input type="text" id="searchFunction" placeholder="Search by keywords"></p>
+        <div id="factsbox"></div><!--The box where the random facts appear-->
+        <div id="generateButton"><p>
+            <button onclick="generateRandomFact()">Generate</button>
+        </p>
+        </div>
+        or
+        <p>
+            <input type="text" id="searchFunction" placeholder="Search by keywords">
+        </p>
+
         <h2>🐱Submit your own cat facts🐱</h2>
         <input type="text" id="submitFunction" placeholder="Ex. Cats are cute!">
-    </div>      
+        <button type="button" onclick="submitCatFact()">Submit</button>
+ 
     <div id="searchResults">
     </div>
 </body>
