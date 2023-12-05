@@ -62,17 +62,27 @@ function displayPastGenerations() {
 
 // // Function to submit a cat fact
 async function submitCatFact(fact) {
-        const response = await fetch(SUBMIT_FACT_API_URL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ fact }),
-        });
-        return response.json(); 
+    const response = await fetch(SUBMIT_FACT_API_URL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ fact }),
+    });
+
+    const responseData = await response.json();
+    if (responseData.success) {
+        updateUserSubmittedFactsList(fact);
     }
+}
 
-
+//updated list for user submitted facts
+function updateUserSubmittedFactsList(fact) {
+    const listElement = document.getElementById('userSubmittedFactsList');
+    const listItem = document.createElement('li');
+    listItem.textContent = fact;
+    listElement.appendChild(listItem);
+}
 
 
 // Function to search cat facts
