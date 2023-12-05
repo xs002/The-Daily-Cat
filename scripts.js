@@ -7,24 +7,24 @@ const SUBMIT_FACT_API_URL = '';
 //API endpoint for searching cat facts
 const SEARCH_FACTS_API_URL = '';
 
-//switch between the pages
-document.addEventListener('DOMContentLoaded', function () {
-    const isLandingPage = document.getElementById('generationsPage');
-    const isGenerationsPage = document.getElementById('landingPage');
-    if (isLandingPage) {
-        isLandingPage.addEventListener('click', function () {
-            window.location.href = 'pastgenerations.html';
-        });
-    }
-    if (isGenerationsPage) {
-        isGenerationsPage.addEventListener('click', function () {
-            window.location.href = 'landingpage.html';
-        });
-    }
-});
+// //switch between the pages
+// document.addEventListener('DOMContentLoaded', function () {
+//     const isLandingPage = document.getElementById('generationsPage');
+//     const isGenerationsPage = document.getElementById('landingPage');
+//     if (isLandingPage) {
+//         isLandingPage.addEventListener('click', function () {
+//             window.location.href = 'pastgenerations.html';
+//         });
+//     }
+//     if (isGenerationsPage) {
+//         isGenerationsPage.addEventListener('click', function () {
+//             window.location.href = 'landingpage.html';
+//         });
+//     }
+// });
 
 const pastGenerationsList = document.getElementById('pastGenerationsList');
-const generateButton = document.getElementById('generateButton');
+const generateButton = document.getElementsByClassName('gen-button');
 const pastGenerations = [];
 
 generateButton.addEventListener("click", function () {
@@ -46,10 +46,11 @@ async function generateRandomFact(){
  
 // display the cat fact-not working bc it isn't accessing pastgenerations.html
 function displayFact(fact) {
-    const factbox = document.getElementById('factsbox');
-    factbox.textContent = '';
+    const factbox = document.getElementById('generated-facts');
+    factbox.innerHTML = ''; // Clear previous content
     factbox.textContent = fact;
 }
+
 //display past generations
 function displayPastGenerations() {
     const pastGenerationsList = document.getElementById('generatedList');
