@@ -1,0 +1,112 @@
+body {
+    background-image: url("background.jpg");
+    flex: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 20px;
+    color: #000117;
+    font-family: "Guava Candy";
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-body img {
+    margin-top: 10%;
+}
+
+#button {
+    background: url("save-reg.png") no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 30px;
+    border: none;
+    margin: auto;
+    display: block;
+}
+
+#button:hover {
+    background: url("save-hover.png") no-repeat;
+    background-size: cover;
+}
+
+#button-clear {
+    border-radius: 4px;
+    background-color: white;
+    color: #000117;
+    border: 1px solid #000117;
+}
+
+#submitFunction {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Guava Candy";
+    font-size: 500%;
+    margin: 0%;
+}
+
+h2 {
+    font-family: "Guava Candy";
+}
+
+#random-cat-facts-generator-text {
+    margin-top: 0%;
+    margin-bottom: 4%;
+}
+
+.main-body {
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+}
+
+.top-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.top-bar li {
+    float: left;
+}
+
+.top-bar li a {
+    display: block;
+    color: #000117;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Guava Candy";
+}
+
+.top-bar li a:hover {
+    color: #89A3FF;
+}
+
+#fact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fact-list ul {
+    list-style-position: inside;
+    /* Set bullet points inside the list items */
+    text-align: left;
+    /* Adjust text alignment as needed */
+    font-size: 120%;
+}
