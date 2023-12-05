@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="stylespastgenerations.css">
     <title>The Daily Cat</title>
 </head>
-
 <body>
-    <div class="top-bar">
-        <ul>
-            <li><img src="cat-logo.png" alt=cat-icon width=50></li>
-            <li><a href="landingpage.html">The Daily Cat</a></li>
-            <li style="float:right"><a href="pastgenerations.html">My Past Generations</a></li>
-        </ul>
-    </div>
-    <div id="main-body">
-        <img src="https://static.vecteezy.com/system/resources/thumbnails/009/665/315/small/group-of-cute-kitty-cat-family-greeting-cartoon-png.png"
-            alt="a-group-of-cats">
+    <script src = "index.js"></script>
+    <div id="decor">
+        <p>The Daily Cat</p>
+        <div id = "landingPage"><button onclick="search()">Main Page</button></div><!--js links to other page-->
+        <br>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/009/665/315/small/group-of-cute-kitty-cat-family-greeting-cartoon-png.png">
         <h1>The Daily Cat</h1>
-        <h2 id="random-cat-facts-generator-text">Random Cat Facts Generator</h2>
+        <h2>Random Cat Facts Generator</h2>
+
     </div>
-    <div id="past-generations-list">
+    <div id="past generations">
         <h2>My Past Generations</h2>
-        <ul>
-            <li>boop</li>
+        <ul id="generatedList">
             <!--create a JS function to add to this list-->
         </ul>
-
     </div>
+    </div>      
 </body>
-
 </html>

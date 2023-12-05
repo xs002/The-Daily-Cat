@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styleslandingpage.css">
     <title>The Daily Cat</title>
 </head>
-
 <body>
-    <div class="top-bar">
-        <ul>
-            <li><img src="cat-logo.png" alt=cat-icon width=50></li>
-            <li><a href="landingpage.html">The Daily Cat</a></li>
-            <li style="float:right"><a href="pastgenerations.html">My Past Generations</a></li>
-        </ul>
+    <script src = "index.js"></script>
+    <div id="decor">
+        <p>The Daily Cat</p>
+        <div id = "generationsPage"><button onclick="search()">My Past Generations</button></div><!--js links to other page-->
+        <br>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/009/665/315/small/group-of-cute-kitty-cat-family-greeting-cartoon-png.png">
+        <h1>The Daily Cat</h1>
+        <h2>Random Cat Facts Generator</h2>
+
     </div>
 
-    <div class="main-body">
-        <div id="title">
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/009/665/315/small/group-of-cute-kitty-cat-family-greeting-cartoon-png.png"
-                alt="a-group-of-cats">
-            <h1>The Daily Cat</h1>
-            <h2 id="random-cat-facts-generator-text">Random Cat Facts Generator</h2>
+    <div id="main functions">
+        <!--generate function-->
+        <div id="generated-facts"></div><!--The box where the random facts appear-->
+        <div id="generateButton"><p>
+            <button onclick="generateRandomFact()">Generate</button>
+        </p>
         </div>
-        <div id="generator">
-            <div id="generated-facts"></div><!--The box where the random facts appear-->
-            <div>
-                <p>
-                    <span class="gen-button"><button class="gen-button" onclick="search()">
-                        </button></span> OR <input type="text" id="searchFunction" placeholder="Search by keywords">
-                </p>
-            </div>
-            <!--generate function-->
-        </div>
-        <div id="submit">
-            <h2 id="sibmit-your-own-cat-facts-text">🐱Submit your own cat facts🐱</h2>
-            <input type="text" id="submitFunction" placeholder="Ex. Cats are cute!">
-        </div>
+        or
+        <p>
+            <input type="text" id="searchFunction" placeholder="Search by keywords">
+        </p>
+
+        <h2>🐱Submit your own cat facts🐱</h2>
+        <input type="text" id="submitFunction" placeholder="Ex. Cats are cute!">
+        <button type="button" onclick="submitCatFact()">Submit</button>
+ 
+    <div id="searchResults">
     </div>
 </body>
-
 </html>
