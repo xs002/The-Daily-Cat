@@ -36,11 +36,11 @@ body {
 #gen-button {
     background: url("button-reg.png") no-repeat;
     background-size: cover;
-    width: 80px;  
-    height: 30px; 
+    width: 80px;
+    height: 30px;
     border: none;
-    margin: auto; 
-    display: block; 
+    margin: auto;
+    display: block;
 }
 
 #gen-button:hover {
@@ -69,7 +69,7 @@ h2 {
 }
 
 
-ul {
+.top-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -77,11 +77,11 @@ ul {
     background-color: transparent;
 }
 
-li {
+.top-bar li {
     float: left;
 }
 
-li a {
+.top-bar li a {
     display: block;
     color: #000117;
     text-align: center;
@@ -90,6 +90,25 @@ li a {
     font-family: "Guava Candy";
 }
 
-li a:hover {
+.top-bar li a:hover {
     color: #89A3FF;
+}
+
+#past-generations-list ul {
+    list-style-position: inside;
+    text-align: center;
+    font-size: 120%;
+
+}
+
+#generated-facts {
+    margin-bottom: 5%;
+}
+
+#past-generation li {
+    list-style-position: inside;
+    text-align: center;
+    font-size: 120%;
+    list-style-type: none;
+
 }
